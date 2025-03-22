@@ -33,7 +33,7 @@ app.layout = html.Div(children=[
     html.H1(children='Data visualisation on the sales of the Pink Morsels', className="m-auto", id="header"),
     
     html.Div(
-      id="line_graph"  
+      id="line_graph"
     ),
     
     html.Div([
