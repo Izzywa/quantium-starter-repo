@@ -1,4 +1,7 @@
+import sys
+import pytest
 from dash.testing.application_runners import import_app
+
 
 def test_app(dash_duo):
     app = import_app("app")
@@ -20,3 +23,6 @@ def test_app(dash_duo):
     assert dash_duo.get_logs() == [], "Browser console should contain no error"
     
     return None
+
+if __name__ == "__main__":
+    sys.exit(pytest.main())
